@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ghulam Hassan | IT Professional</title>
+<style>
+  :root {
+    --navy: #0a2540;
+    --accent: #2563eb;
+    --light: #f5f7fa;
+    --text: #1e293b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--light);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  header {
+    background: var(--navy);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  header h1 { font-size: 2.2rem; margin-bottom: 8px; }
+  header p { color: #cbd5e1; font-size: 1.1rem; }
+  nav {
+    background: white;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 14px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+  }
+  nav a {
+    color: var(--navy);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  nav a:hover { color: var(--accent); }
+  section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 20px;
+  }
+  h2 {
+    color: var(--navy);
+    border-left: 5px solid var(--accent);
+    padding-left: 12px;
+    margin-bottom: 20px;
+  }
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .skill-tag {
+    background: var(--navy);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+  .card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .card h3 { color: var(--navy); margin-bottom: 6px; }
+  .card span { color: var(--accent); font-size: 0.85rem; font-weight: 600; }
+  footer {
+    text-align: center;
+    padding: 30px;
+    color: #64748b;
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Ghulam Hassan</h1>
+  <p>IT Professional | Networking & Cloud | HSE Certified</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>IT professional based in Al-Ahsa, Saudi Arabia, with a DAE in Computer Information Technology and CCNA certification. Trained in Big Data and Cloud Computing fundamentals, with additional HSE certifications (OSHA, IOSH) that bring safety-focused discipline to technical environments. Actively seeking IT and network support roles.</p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <span class="skill-tag">Networking (CCNA)</span>
+    <span class="skill-tag">Cloud Computing</span>
+    <span class="skill-tag">Big Data Basics</span>
+    <span class="skill-tag">Windows & Linux</span>
+    <span class="skill-tag">Troubleshooting</span>
+    <span class="skill-tag">HSE Standards</span>
+    <span class="skill-tag">Office Administration</span>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>Subnet Calculator <span>Python</span></h3>
+    <p>A CLI tool that calculates network address, broadcast address, and usable host ranges from an IP/CIDR input — built to apply CCNA networking concepts.</p>
+  </div>
+
+  <div class="card">
+    <h3>Personal Portfolio Website <span>HTML/CSS</span></h3>
+    <p>This website — a responsive, single-page professional portfolio built from scratch to showcase skills and projects.</p>
+  </div>
+
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: your-email@example.com</p>
+  <p>LinkedIn: linkedin.com/in/your-profile</p>
+  <p>Location: Al-Ahsa, Saudi Arabia</p>
+</section>
+
+<footer>
+  &copy; 2026 Ghulam Hassan. Built with HTML & CSS.
+</footer>
+
+</body>
+</html>
