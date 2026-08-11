@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ghulam Hassan | IT Professional</title>
+<title>Ghulam Hassan | IT & Networking Professional</title>
 <style>
   :root {
     --navy: #0a2540;
@@ -30,17 +30,18 @@
     background: white;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 24px;
     padding: 14px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     position: sticky;
     top: 0;
+    flex-wrap: wrap;
   }
   nav a {
     color: var(--navy);
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
   nav a:hover { color: var(--accent); }
   section {
@@ -73,8 +74,31 @@
     margin-bottom: 16px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   }
-  .card h3 { color: var(--navy); margin-bottom: 6px; }
-  .card span { color: var(--accent); font-size: 0.85rem; font-weight: 600; }
+  .card h3 { color: var(--navy); margin-bottom: 4px; }
+  .card .meta { color: var(--accent); font-size: 0.85rem; font-weight: 600; margin-bottom: 8px; display: block; }
+  .card ul { margin-left: 18px; margin-top: 6px; }
+  .card ul li { margin-bottom: 4px; font-size: 0.95rem; }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+  }
+  .contact-item {
+    background: white;
+    border-radius: 10px;
+    padding: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .contact-item span.label {
+    display: block;
+    color: var(--accent);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .contact-item a { color: var(--navy); text-decoration: none; font-weight: 600; }
+  .contact-item a:hover { color: var(--accent); }
   footer {
     text-align: center;
     padding: 30px;
@@ -87,54 +111,136 @@
 
 <header>
   <h1>Ghulam Hassan</h1>
-  <p>IT Professional | Networking & Cloud | HSE Certified</p>
+  <p>IT & Networking — Network Technician</p>
 </header>
 
 <nav>
   <a href="#about">About</a>
   <a href="#skills">Skills</a>
+  <a href="#education">Education</a>
+  <a href="#experience">Trainings</a>
+  <a href="#certifications">Certifications</a>
   <a href="#projects">Projects</a>
   <a href="#contact">Contact</a>
 </nav>
 
 <section id="about">
-  <h2>About Me</h2>
-  <p>IT professional based in Al-Ahsa, Saudi Arabia, with a DAE in Computer Information Technology and CCNA certification. Trained in Big Data and Cloud Computing fundamentals, with additional HSE certifications (OSHA, IOSH) that bring safety-focused discipline to technical environments. Actively seeking IT and network support roles.</p>
+  <h2>Professional Summary</h2>
+  <p>Entry-level IT & Networking professional with a Diploma in Computer Information Technology (DAE-CIT) and hands-on training in CCNA networking, Big Data, and Cloud Computing. Skilled in Cisco Packet Tracer, Wireshark, and both Windows and Linux environments. Reliable, detail-oriented, and eager to apply technical training in a network support or IT infrastructure role.</p>
 </section>
 
 <section id="skills">
-  <h2>Skills</h2>
+  <h2>Core Skills</h2>
   <div class="skills-grid">
-    <span class="skill-tag">Networking (CCNA)</span>
-    <span class="skill-tag">Cloud Computing</span>
-    <span class="skill-tag">Big Data Basics</span>
+    <span class="skill-tag">Networking Fundamentals (CCNA)</span>
+    <span class="skill-tag">LAN/WAN</span>
+    <span class="skill-tag">IP Addressing & Subnetting</span>
+    <span class="skill-tag">Routing & Switching</span>
+    <span class="skill-tag">Cisco Packet Tracer</span>
+    <span class="skill-tag">Wireshark</span>
     <span class="skill-tag">Windows & Linux</span>
-    <span class="skill-tag">Troubleshooting</span>
-    <span class="skill-tag">HSE Standards</span>
-    <span class="skill-tag">Office Administration</span>
+    <span class="skill-tag">HTML & SQL</span>
+    <span class="skill-tag">Big Data & Cloud Computing</span>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="card">
+    <h3>Associate Engineering — Computer Information Technology (DAE-CIT)</h3>
+    <span class="meta">Pakistan College of Technology · 2025</span>
+  </div>
+  <div class="card">
+    <h3>Intermediate in Fine Arts (FA)</h3>
+    <span class="meta">Board of Intermediate & Secondary Education · 2020 - 2022</span>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Trainings & Internships</h2>
+
+  <div class="card">
+    <h3>CCNA Training-Based Internship</h3>
+    <span class="meta">ICT Institute, Pakistan · Jun 2024</span>
+    <ul>
+      <li>Completed structured, hands-on training in networking fundamentals, routing & switching, and network configuration using Cisco Packet Tracer.</li>
+      <li>Supported network monitoring, IP addressing, subnetting, cable testing, and connectivity troubleshooting.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Big Data & Cloud Computing Virtual Internship</h3>
+    <span class="meta">YBI Foundation, India · May 2024</span>
+    <ul>
+      <li>Gained practical exposure to Big Data concepts and cloud computing fundamentals as part of a structured internship program.</li>
+      <li>Assisted with cloud computing environments, data storage, and basic cloud infrastructure — including virtualization, resource management, and system deployment.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>IT Infrastructure Internship</h3>
+    <span class="meta">Pakistan College of Technology, Pakistan</span>
+    <ul>
+      <li>Received foundational training in Big Data and cloud computing concepts and tools.</li>
+      <li>Assisted with IT infrastructure setup, hardware installation, system configuration, network connectivity & troubleshooting.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="certifications">
+  <h2>Certifications</h2>
+  <div class="skills-grid">
+    <span class="skill-tag">CCNA (Cisco Certified Network Associate) — Training Completed</span>
+    <span class="skill-tag">DAE-CIT — Pakistan College of Technology</span>
+    <span class="skill-tag">Office Management</span>
+    <span class="skill-tag">Big Data & Cloud Computing</span>
+    <span class="skill-tag">OSHA (Occupational Safety & Health)</span>
+    <span class="skill-tag">IOSH Managing Safely</span>
   </div>
 </section>
 
 <section id="projects">
   <h2>Projects</h2>
-
   <div class="card">
-    <h3>Subnet Calculator <span>Python</span></h3>
-    <p>A CLI tool that calculates network address, broadcast address, and usable host ranges from an IP/CIDR input — built to apply CCNA networking concepts.</p>
+    <h3>Subnet Calculator</h3>
+    <span class="meta">Python</span>
+    <p>A CLI tool that calculates network address, broadcast address, and usable host ranges from an IP/CIDR input — built to apply CCNA networking concepts. <a href="https://github.com/Henrypette41279/Portfolio-website" style="color:var(--accent);">View on GitHub</a></p>
   </div>
-
   <div class="card">
-    <h3>Personal Portfolio Website <span>HTML/CSS</span></h3>
-    <p>This website — a responsive, single-page professional portfolio built from scratch to showcase skills and projects.</p>
+    <h3>Personal Portfolio Website</h3>
+    <span class="meta">HTML / CSS</span>
+    <p>This website — a responsive, single-page professional portfolio built from scratch to showcase skills, education, and projects.</p>
   </div>
-
 </section>
 
 <section id="contact">
   <h2>Contact</h2>
-  <p>Email: your-email@example.com</p>
-  <p>LinkedIn: linkedin.com/in/your-profile</p>
-  <p>Location: Al-Ahsa, Saudi Arabia</p>
+  <div class="contact-grid">
+    <div class="contact-item">
+      <span class="label">WhatsApp</span>
+      <a href="https://wa.me/966597501853">+966 59 750 1853</a>
+    </div>
+    <div class="contact-item">
+      <span class="label">Call</span>
+      <a href="tel:+966557469852">+966 55 746 9852</a>
+    </div>
+    <div class="contact-item">
+      <span class="label">Email</span>
+      <a href="mailto:hm9133773319@gmail.com">hm9133773319@gmail.com</a>
+    </div>
+    <div class="contact-item">
+      <span class="label">Address</span>
+      Al-Ahsa, Hofuf, Saudi Arabia
+    </div>
+    <div class="contact-item">
+      <span class="label">Nationality</span>
+      Pakistani
+    </div>
+    <div class="contact-item">
+      <span class="label">Languages</span>
+      English • Urdu
+    </div>
+  </div>
 </section>
 
 <footer>
